@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    gap: 30px;
+}
+.item{
+    background-color: purple;
+}
+.item:nth-child(1){
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.item:nth-child(2), .item:nth-child(3), .item:nth-child(6),
+.item:nth-child(7){
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.item:nth-child(4){
+    grid-column: span 5;
+    grid-row: span 1;
+}
+.item:nth-child(5){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.item:nth-child(6), .item:nth-child(8){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.item:nth-child(10){
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+
+
+
+
+
+
